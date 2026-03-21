@@ -1,0 +1,70 @@
+.container {
+  background-color: var(--c-white);
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid var(--c-border);
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.overlayUi {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overlayTitle {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-black);
+}
+
+.overlaySubtitle {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-light);
+}
+
+.status {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  pointer-events: none;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statusMain {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-black);
+}
+
+.statusSub {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-light);
+}
+
+.mono {
+  font-family: var(--f-mono);
+  font-size: 10px;
+}

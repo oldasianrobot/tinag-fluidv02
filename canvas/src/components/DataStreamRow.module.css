@@ -1,0 +1,106 @@
+.row {
+  display: flex;
+  width: 100%;
+  background-color: var(--c-white);
+}
+
+.cell {
+  padding: 14px 20px;
+  border-right: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.cell:last-child {
+  border-right: none;
+}
+
+.cellId     { flex: 0 0 31%; justify-content: center; }
+.cellLegend { flex: 0 0 38%; gap: 8px; }
+.cellYears  { flex: 0 0 31%; gap: 10px; }
+
+.label {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-light);
+}
+
+.value {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-black);
+  font-weight: 600;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-light);
+  margin-bottom: 4px;
+}
+
+.legendList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.offenseLabel {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--c-text-dark);
+  flex: 1;
+}
+
+.pct {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--c-text-black);
+  white-space: nowrap;
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+}
+
+.count {
+  color: var(--c-text-black);
+}
+
+.yearBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.yearLabel {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: var(--c-text-light);
+}
+
+.yearValue {
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  color: var(--c-text-dark);
+  font-family: var(--f-mono);
+}
