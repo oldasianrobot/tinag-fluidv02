@@ -1,6 +1,6 @@
 # This Is Not A Gap: Fluid Record V02
 
-**An interactive generative art experience that renders anti-Asian hate crime data as live fluid trails — where each particle's color, weight, and trajectory carries the encoded record of violence, absence, and everything the data could not reach.**
+**An interactive generative art experience that renders anti-Asian hate crime data as live fluid trails where each particle's color, weight, and trajectory carries the encoded record of violence, absence, and everything the data could not reach.**
 
 > *The gap between an FBI report of 407 incidents and a community count of 12,803 in the same year is not a discrepancy to footnote. It is the subject of the work.*
 
