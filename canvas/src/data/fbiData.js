@@ -14,14 +14,16 @@ function normalize(value, min, max, outMin, outMax) {
 }
 
 // Offense types mapped to severity colors
-// warm = physical violence, cool = psychological/property
-// Weighted by real percentages from fbi_offense_types.csv
+// Violent offenses against persons → warm (red → orange → yellow)
+// Property offenses → cool (green)
+// Colors from data/fbi/fbi_offense_color_system.md
+// Weights normalized from fbi_offense_types.csv so they sum to 1.0
 const OFFENSE_PALETTE = [
-  { color: '#FF0000', weight: 0.01 }, // Murder / non-negligent manslaughter
-  { color: '#FF4400', weight: 0.06 }, // Aggravated assault
-  { color: '#FF8800', weight: 0.26 }, // Simple assault
-  { color: '#4488FF', weight: 0.38 }, // Intimidation
-  { color: '#8899BB', weight: 0.29 }, // Vandalism / property
+  { color: '#CC0000', weight: 0.005 }, // Murder / non-negligent manslaughter (<1%)
+  { color: '#FF5500', weight: 0.130 }, // Aggravated assault (14%)
+  { color: '#FFB300', weight: 0.240 }, // Simple assault (26%)
+  { color: '#FFE033', weight: 0.355 }, // Intimidation (38%) — crime against persons; warm
+  { color: '#2D6A4F', weight: 0.270 }, // Vandalism / property (29%)
 ]
 
 // Build cumulative weight table for weighted random selection

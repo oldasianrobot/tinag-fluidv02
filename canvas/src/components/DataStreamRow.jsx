@@ -1,11 +1,11 @@
 import styles from './DataStreamRow.module.css'
 
 const LEGEND = [
-  { color: '#FF0000', offense: 'Murder / Non-negligent manslaughter', pct: '<1%', count: '~30'    },
-  { color: '#FF4400', offense: 'Aggravated assault',                  pct: '6%',  count: '~354'   },
-  { color: '#FF8800', offense: 'Simple assault',                      pct: '26%', count: '~1,535' },
-  { color: '#4488FF', offense: 'Intimidation',                        pct: '38%', count: '~2,243' },
-  { color: '#8899BB', offense: 'Vandalism / Property destruction',    pct: '29%', count: '~1,712' },
+  { color: '#CC0000', offense: 'Murder / Non-negligent manslaughter', pct: '<1%', count: '~30'    },
+  { color: '#FF5500', offense: 'Aggravated assault',                  pct: '14%', count: '~826'   },
+  { color: '#FFB300', offense: 'Simple assault',                      pct: '26%', count: '~1,535' },
+  { color: '#FFE033', offense: 'Intimidation',                        pct: '38%', count: '~2,243' },
+  { color: '#2D6A4F', offense: 'Vandalism / Property destruction',    pct: '29%', count: '~1,712' },
 ]
 
 const DATA_YEARS = '1993, 1995, 2000–2023'

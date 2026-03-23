@@ -9,6 +9,8 @@ import {
 
 const MAX_PARTICLES = 4000
 const SPAWN_RATE = 5
+const GLOBAL_TURBULENCE = 0.5
+const MAX_DPR = 2
 
 class Particle {
   constructor(x, y, vx, vy, color, size, maxTrailLength) {
@@ -73,7 +75,6 @@ export function GenerativeCanvas() {
     particles: [],
     mouse: { x: -1000, y: -1000, vx: 0, vy: 0, active: false },
     lastMouse: { x: -1000, y: -1000 },
-    globalTurbulence: 0.5,
     width: 0,
     height: 0,
     rafId: null,
@@ -88,10 +89,11 @@ export function GenerativeCanvas() {
       const rect = canvas.parentElement.getBoundingClientRect()
       s.width = rect.width
       s.height = rect.height
-      canvas.width = s.width * window.devicePixelRatio
-      canvas.height = s.height * window.devicePixelRatio
+      const dpr = Math.min(window.devicePixelRatio, MAX_DPR)
+      canvas.width = s.width * dpr
+      canvas.height = s.height * dpr
       ctx.setTransform(1, 0, 0, 1, 0, 0)
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio)
+      ctx.scale(dpr, dpr)
       ctx.fillStyle = '#ffffff'
       ctx.fillRect(0, 0, s.width, s.height)
     }
@@ -113,7 +115,7 @@ export function GenerativeCanvas() {
 
       for (let i = s.particles.length - 1; i >= 0; i--) {
         const p = s.particles[i]
-        p.update(s.globalTurbulence, s.mouse.x, s.mouse.y)
+        p.update(GLOBAL_TURBULENCE, s.mouse.x, s.mouse.y)
         p.draw(ctx)
         if (p.life <= 0) s.particles.splice(i, 1)
       }
@@ -177,7 +179,7 @@ export function GenerativeCanvas() {
       />
       <div className={styles.overlayUi}>
         <span className={styles.overlayTitle}>CANVAS SURFACE</span>
-        <span className={styles.overlaySubtitle}>INTERACT TO GENERATE</span>
+        <span className={styles.overlaySubtitle}>DRAG TO GENERATE</span>
       </div>
       <div className={styles.status}>
         <ParticleCount stateRef={stateRef} />
