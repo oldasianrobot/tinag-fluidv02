@@ -1,4 +1,4 @@
-# This Is Not A Gap — *fluid*
+# This Is Not A Gap: Fluid Record V02
 
 **An interactive generative art experience that renders anti-Asian hate crime data as live fluid trails — where each particle's color, weight, and trajectory carries the encoded record of violence, absence, and everything the data could not reach.**
 
