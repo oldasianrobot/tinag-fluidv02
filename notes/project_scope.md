@@ -2,7 +2,7 @@
 
 ## What This Project Uses
 
-For TINAG purposes, this database is scoped to two data points per year, per source:
+For AAVR purposes, this database is scoped to two data points per year, per source:
 
 1. **Total annual incident/offense count**
 2. **Disaggregation by type of offense or incident** (where available)

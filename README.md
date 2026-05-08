@@ -1,4 +1,4 @@
-# This Is Not A Gap: Fluid Record V02
+# AAVR: Fluid V02
 
 **An interactive generative art experience that renders anti-Asian hate crime data as live fluid trails where each particle's color, weight, and trajectory carries the encoded record of violence, absence, and everything the data could not reach.**
 
@@ -8,7 +8,7 @@
 
 ## What It Is
 
-This the second iteration of TINAG (This Is Not A Gap) series -- an ongoing art project examining anti-Asian hate in America through data, absence, and the structural limits of counting. This version is very similar to the original except it removes the independent generative spirals. Only the mouse and its movements will generate fluid streams so that the user can focus on one object, instead of several which became a distraction.
+This is the second iteration of AAVR (Anti-Asian Violence and Racism) — an ongoing art project examining anti-Asian hate in America through data, absence, and the structural limits of counting. This version is very similar to the original except it removes the independent generative spirals. Only the mouse and its movements will generate fluid streams so that the user can focus on one object, instead of several which became a distraction.
 
 Move your cursor across the screen and you generate particles. Each particle is drawn from 33 years of FBI hate crime data (1991–2023). Its **color** encodes the type of offense. Its **size** and **trail length** encode the incident count from a sampled year — a higher-count year produces a heavier, longer stroke; a quieter year, a thinner, shorter one. The trails are fluid: turbulence-driven, curved, briefly visible before they decay and vanish. Like the events they represent.
 
@@ -31,4 +31,4 @@ What matters is not the precision of any single number. It is the fact that both
 
 ---
 
-*Data compiled March 2026. TINAG — This Is Not A Gap.*
+*Data compiled March 2026. AAVR — Anti-Asian Violence and Racism.*

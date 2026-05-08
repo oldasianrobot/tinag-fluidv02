@@ -4,8 +4,8 @@ export function MetaRow() {
   return (
     <div className={styles.row}>
       <div className={`${styles.cell} ${styles.cell1}`}>
-        <span className={styles.title}>THIS IS NOT A GAP</span>
-        <span className={styles.subtitle}>FLUID RECORD V02</span>
+        <span className={styles.title}>AAVR</span>
+        <span className={styles.subtitle}>FluidV02</span>
       </div>
       <div className={`${styles.cell} ${styles.cell2}`}>
         <span className={styles.meta}>SOURCE: FBI UCR 1991–2023</span>

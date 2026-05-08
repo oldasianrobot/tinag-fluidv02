@@ -1,6 +1,6 @@
 # Anti-Asian Hate Crimes & Incidents: Data Overview
 
-Project: **TINAG — This Is Not A Game** (ephemeral art experience)
+Project: **AAVR — Anti-Asian Violence and Racism** (ephemeral art experience)
 Data compiled: March 2026
 
 ---
