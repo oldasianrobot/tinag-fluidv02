@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { MetaRow } from './components/MetaRow'
 import { GenerativeCanvas } from './components/GenerativeCanvas'
 import { DataStreamRow } from './components/DataStreamRow'
@@ -9,6 +10,7 @@ function App() {
       <MetaRow />
       <GenerativeCanvas />
       <DataStreamRow />
+      <Analytics />
     </div>
   )
 }
